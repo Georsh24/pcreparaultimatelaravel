@@ -31,3 +31,4 @@ Route::group(['prefix' => ''], function(){
     Route::resource('equipos', 'EquiposController');
 });
 Route::get('/pdf/{id}', 'PdfController@index');
+Route::get('/equipo/ver/{id}', 'EquiposController@ver');

@@ -10,10 +10,10 @@
 @endif
 <div class="row">
     <div class="col-md-12">
-        <div class="table-resposive">
-            <table class="table table-hover">
+        <div class="w3-responsive">
+            <table class="w3-table-all w3-card-4 w3-small">
                 <thead>
-                    <tr class="danger">
+                    <tr class="w3-red">
                         <th>No.</th>
                         <th>Codigo</th>
                         <th>Modelo</th>
@@ -21,10 +21,11 @@
                         <th>Descripcion</th>
                         <th>Estado</th>
                         <th>Costo</th>
+                        
                         <th>
 
                         
-                            <a href="{{ URL('equipos/create')}}" class="btn btn-success btn-xs">Nuevo <img src="{{ asset('imgs/nuevo.png')}}"> </a>
+                            <a href="{{ URL('equipos/create')}}" class="btn btn-success btn-xs"  >Nuevo <img src="{{ asset('imgs/nuevo.png')}}" width="25px"> </a>
                         </th>
                     </tr>
                 </thead>
@@ -40,19 +41,21 @@
                             <td>{{ $equipo->estado}}</td>
                             <td>{{ $equipo->costo}}</td>
                                 <td>
-                
-                                <a href="{{URL ('/equipos/' . $equipo->id . '/edit')}}" class="btn btn-xs  btn-primary"><img src="{{ asset('imgs/editar.png')}}"></a>
-
+                               <div class="w3-bar">
+                                    <a  href="{{URL ('/equipo/ver/'. $equipo->id )}}" class="col-sm-3 w3-button  w3-orange w3-hover-grey ">ver</a>
+                                <a  href="{{URL ('/equipos/' . $equipo->id . '/edit')}}" class="col-sm-3 w3-button  w3-blue w3-hover-grey "><img src="{{ asset('imgs/edit.png')}}" ></a>
+                                <a href="{{URL ('/pdf/' . $equipo->codigo  )}}" class=" col-sm-3 w3-button  w3-green w3-hover-grey "><img src="{{ asset('imgs/print.png')}}" ></a>
+                           
                                 <form action="{{ URL('equipos/'. $equipo->id )}}" method="POST"> {{ csrf_field()}}{{ method_field('DELETE')}}
                                 
-                                
-                                
-                               <button type="submit" class="btn btn-xs btn-danger"><img src="{{ asset('imgs/eliminar.png')}}"></button>
-                            </form>
 
-                               <a href="{{URL ('/pdf/' . $equipo->codigo  )}}" class="btn btn-primary">Imprimir</a>
-                        
-                   
+                                
+                               <button type="submit" class="col-sm-3 w3-button  w3-red w3-hover-grey"><img src="{{ asset('imgs/delete.png')}}" ></button>
+                            </form>
+                            
+                               
+
+                               </div>
                             
                             </td>
                         </tr>

@@ -668,3 +668,6 @@ body {
 .tarjeta {
     width: 50%;
 }
+.botoncrud{
+    background-color:  red!important;
+}

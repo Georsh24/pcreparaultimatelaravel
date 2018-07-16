@@ -1,5 +1,3 @@
-
-    
 @extends('layouts.app')
 @section('content')    
 <body style="background-color: rgb(120, 120, 120)!important;">
@@ -22,12 +20,11 @@
                     
                                     @endif
     
-                                
-                                    <div class="col-md-6 form-group{{ $errors->has('codigo') ? ' has-error' : '' }}">
+                                   
                                             
                                         
                                             <div class="">
-                                                <input id="codigo" type="text" class="w3-input  w3-animate-input" style="width: 75%" name="codigo" placeholder="#12345" value="{{ old('codigo') }}">
+                                                <input id="codigo" type="text" class="w3-input  w3-animate-input" style="width: 75%; display: none;" name="codigo" placeholder="#12345" value="{{ $equipo->codigo}}">
                     
                                                 @if ($errors->has('codigo'))
                                                     <span class="help-block">
@@ -35,13 +32,11 @@
                                                     </span>
                                                 @endif
                                             </div>
-                                        </div>
+                                        
                     
-                                                    <div class="col-md-6 form-group{{ $errors->has('model') ? ' has-error' : '' }}">
-                                            <label for="model" class=" control-label">Modelo</label>
-                    
+                                                    
                                             <div class="">
-                                                <input id="model" type="text" class="w3-input w3-animate-input" style="width: 75%" name="model" placeholder="Modelo" value="{{ old('model') }}" >
+                                                <input id="model" type="text" class="w3-input w3-animate-input" style="width: 75%; display: none;" name="model" placeholder="Modelo" value=" {{ $equipo->model}}" >
                     
                                                 @if ($errors->has('model'))
                                                     <span class="help-block">
@@ -49,13 +44,12 @@
                                                     </span>
                                                 @endif
                                             </div>
-                                        </div>
+                                      
                     
-                                                    <div class="col-md-6 form-group{{ $errors->has('serie') ? ' has-error' : '' }}">
-                                            <label for="serie" class=" control-label">N/S</label>
+                                                  
                     
                                             <div class="">
-                                                <input id="serie" type="text" class="w3-input w3-animate-input" style="width: 75%" name="serie" placeholder="NV56R12m" value="{{ old('serie') }}" >
+                                                <input id="serie" type="text" class="w3-input w3-animate-input" style="width: 75%; display: none;" name="serie" placeholder="NV56R12m" value="{{ $equipo->serie}}" >
                     
                                                 @if ($errors->has('serie'))
                                                     <span class="help-block">
@@ -63,13 +57,14 @@
                                                     </span>
                                                 @endif
                                             </div>
-                                        </div>
+                                        
+                                    
                     
                                                     <div class="col-md-6 form-group{{ $errors->has('descripcion') ? ' has-error' : '' }}">
                                             <label for="descripcion" class=" control-label">Descripcion</label>
                     
                                             <div class="">
-                                                <input id="descripcion" type="text" class="w3-input w3-animate-input" style="width: 75%" name="descripcion" placeholder="Descripcion del problema" value="{{ old('descripcion') }}">
+                                                <input id="descripcion" type="text" class="w3-input w3-animate-input" style="width: 75%;" name="descripcion" placeholder="Descripcion del problema" value="{{ $equipo->descripcion}}">
                     
                                                 @if ($errors->has('descripcion'))
                                                     <span class="help-block">
@@ -83,7 +78,7 @@
                                             <label for="estado" class=" control-label">Estado</label>
                     
                                             <div class="">
-                                                <select id="estado"  class="w3-select w3-animate-input"  style="width: 75%" name="estado" placeholder="" value="{{ old('estado') }}" >
+                                                <select id="estado"  class="w3-select w3-animate-input"  style="width: 75%" name="estado" placeholder="" value="{{ $equipo->estado}}" >
                                                 <option>En Revisión</option>
                                                 <option>En Reparación</option>
                                                 <option>Comunicate con Nosotros</option>
@@ -101,7 +96,7 @@
                                             <label for="costo" class=" control-label">Costo Aproximado $:</label>
                     
                                             <div class="">
-                                                <input id="costo" type="text" class="w3-input w3-animate-input" style="width: 75%" name="costo" placeholder="199" value="{{ old('costo') }}" >
+                                                <input id="costo" type="text" class="w3-input w3-animate-input" style="width: 75%;" name="costo" placeholder="199" value="{{ $equipo->costo}}" >
                     
                                                 @if ($errors->has('costo'))
                                                     <span class="help-block">
@@ -113,53 +108,48 @@
                                             
                                         </div>
 
-                                                           <div class="col-md-6 form-group{{ $errors->has('nombre') ? ' has-error' : '' }}">
-                                            <label for="nombre" class=" control-label">Nombre:</label>
-                    
-                                            <div class="">
-                                                <input id="nombre" type="text" class="w3-input w3-animate-input"  style="width: 75%" name="nombre" placeholder="199" value="{{ old('nombre') }}">
-                    
-                                                @if ($errors->has('nombre'))
-                                                    <span class="help-block">
-                                                        <strong>{{ $errors->first('nombre') }}</strong>
-                                                    </span>
-                                                @endif
-                                            </div>
-                                           
-                                        </div>
-
-                                                           <div class="col-md-6 form-group{{ $errors->has('telefono') ? ' has-error' : '' }}">
-                                            <label for="telefono" class=" control-label">Telefono:</label>
-                    
-                                            <div class="">
-                                                <input id="telefono" type="text"  class="w3-input w3-animate-input" style="width: 75%" name="telefono"  value="{{ old('telefono') }}" >
-                    
-                                                @if ($errors->has('telefono'))
-                                                    <span class="help-block">
-                                                        <strong>{{ $errors->first('telefono') }}</strong>
-                                                    </span>
-                                                @endif
-                                            </div>
-                                           
-                                            
-                                        </div>
-
-                                                           <div class="col-md-6 form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                            <label for="email" class=" control-label">E-mail:</label>
-                    
-                                            <div class="">
-                                                <input id="email" type="text" class="w3-input w3-animate-input" style="width: 75%" name="email"  value="{{ old('email') }}">
-                    
-                                                @if ($errors->has('email'))
-                                                    <span class="help-block">
-                                                        <strong>{{ $errors->first('email') }}</strong>
-                                                    </span>
-                                                @endif
-                                            </div>
-                                           
-                                            
-                                        </div>
+                                              
+                                                <div class="">
+                                                    <input id="nombre" type="text" class="w3-input w3-animate-input"  style="width: 75%; display: none;" name="nombre" placeholder="199" value="{{ $equipo->nombre }}">
+                        
+                                                    @if ($errors->has('nombre'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->first('nombre') }}</strong>
+                                                        </span>
+                                                    @endif
+                                                </div>
+                                               
+                                         
     
+                                                              
+                                                <div class="">
+                                                    <input id="telefono" type="text"  class="w3-input w3-animate-input" style="width: 75%; display: none;" name="telefono"  value="{{$equipo->telefono}}" >
+                        
+                                                    @if ($errors->has('telefono'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->first('telefono') }}</strong>
+                                                        </span>
+                                                    @endif
+                                                </div>
+                                               
+                                                
+                                            
+    
+                                                              
+                                                <div class="">
+                                                    <input id="email" type="text" class="w3-input w3-animate-input" style="width: 75%; display: none;" name="email"  value="{{$equipo->email}}">
+                        
+                                                    @if ($errors->has('email'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->first('email') }}</strong>
+                                                        </span>
+                                                    @endif
+                                                </div>
+                                               
+                                                
+                                            </div>
+        
+
                  
                           
                             <div class="form-group">

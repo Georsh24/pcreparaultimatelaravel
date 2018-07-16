@@ -43,6 +43,7 @@
                     {{ csrf_field()}}
                      
                         <input type="text" class="form-control" name="codigo" placeholder="Buscar..." required autofocus/>
+                             <br>
                                
                   <button type="submit" class="form-control">Buscar</button>
                </form>
@@ -78,7 +79,7 @@
                                   <tbody>
                                 
                                       @foreach ($equipos as $key => $equipo)
-                                      <tr>
+                                      <tr class="info">
                                           <td>{{($key+1)}}</td>
                                           <td>{{ $equipo->codigo}}</td>
                                           <td>{{ $equipo->model}}</td>

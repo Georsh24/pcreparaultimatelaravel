@@ -175,7 +175,7 @@
                   <form method="POST" action="/search/event">
                     {{ csrf_field()}}
                      
-                        <input type="text" class="form-control" name="codigo" placeholder="Buscar..." required autofocus/>
+                        <input type="text" class="form-control" name="codigo" placeholder="Buscar..." required />
                         <br>
 
                   <button type="submit" class="form-control">Buscar</button>
@@ -198,16 +198,16 @@
                   <div class="row">
                       <div class="col-md-12">
                           <div class="table-resposive">
-                              <table class="table table-hover table-bordered">
+                              <table class="table table-hover ">
                                   <thead>
                                       <tr>
-                                          <th>No.</th>
-                                          <th>Codigo</th>
-                                          <th>Modelo</th>
-                                          <th>Serie</th>
-                                          <th>Descripcion</th>
-                                          <th>Estado</th>
-                                          <th>Costo</th>
+                                        
+                                          <th>Codigo:</th>
+                                          <th>Modelo:</th>
+                                          <th>Serie:</th>
+                                          <th>Descripcion:</th>
+                                          <th>Estado:</th>
+                                          <th>Costo Aproximado:</th>
                                   
                                       </tr>
                                   </thead>

@@ -17,6 +17,13 @@ class EquiposController extends Controller
 
         $this->middleware('auth', ['only' => ['store',   'edit', 'update', 'destroy']]);
     }
+
+    public function ver($id)
+    {   
+   $equipo = new Equipos;
+   $equipos = $equipo-> where('id', $id)->get();
+        return view ('ver',["equipos"=>$equipos]);
+    }
     public function index()
     {
 
@@ -90,7 +97,7 @@ class EquiposController extends Controller
     public function edit($id)
     {
         $data['equipo'] = Equipos::find($id);
-        return view('create', $data);
+        return view('editar', $data);
     }
 
   
