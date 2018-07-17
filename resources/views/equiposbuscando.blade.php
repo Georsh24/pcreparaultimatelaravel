@@ -24,11 +24,50 @@
 
 </head>
 
-<body></body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: rgb(120, 120, 120)!important;">
 
-<div id="section2" class="container-fluid">
+<div class="container-fuid encabezado" style="background-color: #ff4040;color:#fff;height:20%;">
+
+<div>
+  <a>
+    <img class="imglogo" src="{{ asset('imgs/Pcreparalogo.png')}}" width="100%">
+  </a>
+</div>
+
+</div>
+<nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="150">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand textencabezado" href="/">PCREPARA</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+         
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+          <li>
+            <a class="textencabezado" href="/login">Administracion</a>
+          </li>
+          <li>
+            <a class="textencabezado" href="/register">Registro</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="" class="container-fluid" >
   <div class="container">
-    <h1>Promociones</h1>
+    <h4 class="text-center">Encuentra tu equipo</h4>
     <div class="container"> 
       <div class="row">
         <div class="col-md-4">
@@ -44,7 +83,7 @@
                      
                         <input type="text" class="form-control" name="codigo" placeholder="Buscar..." required autofocus/>
                              <br>
-                               
+
                   <button type="submit" class="form-control">Buscar</button>
                </form>
                </div>

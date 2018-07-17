@@ -24,7 +24,7 @@
     
                                 
                                     <div class="col-md-6 form-group{{ $errors->has('codigo') ? ' has-error' : '' }}">
-                                            
+                                    <label for="codigo" class=" control-label">Codigo</label>
                                         
                                             <div class="">
                                                 <input id="codigo" type="text" class="w3-input  w3-animate-input" style="width: 75%" name="codigo" placeholder="#12345" value="{{ old('codigo') }}">

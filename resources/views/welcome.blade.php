@@ -141,7 +141,7 @@
       </a>
     </div>
   </div>
-  <div class="cotainer">
+  <div class="container">
     <div class="contextmov">
       <p class="textp">PC Repara es</p>
       <ul class="textul">

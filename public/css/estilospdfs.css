@@ -1,0 +1,254 @@
+
+@media screen and (max-width: 325px) {
+    .titulover{
+    font-size:25px;
+    }
+    .emailver{
+        font-size: 9px!important;
+    }
+    .telefonover{
+        font-size: 15px!important;
+    }
+    .nombrever{
+        font-size: 15px!important;
+    }
+    .costover{
+        font-size: 15px!important;
+    }
+    .estadover{
+        font-size: 15px!important;
+    }
+    .descripcionver{
+        font-size: 14px!important;
+    }
+    .seriever{
+        font-size: 15px!important;
+    }
+    .modelover{
+        font-size: 14px!important;
+    }
+    .codigover{
+        font-size: 15px!important;
+    }
+    .temailver{
+        font-size: 14px!important;
+    }
+    .ttelefonover{
+        font-size: 14px!important;
+    }
+    .tnombrever{
+        font-size: 14px!important;
+    }
+    .tcostover{
+        font-size: 14px!important;
+    }
+    .testadover{
+        font-size: 14px!important;
+    }
+    .tdescripcionver{
+        font-size: 14px!important;
+    }
+    .tseriever{
+        font-size: 15px!important;
+    }
+    .tmodelover{
+        font-size: 13px!important;
+    }
+    .tcodigover{
+        font-size: 15px!important;
+    }
+    }
+
+@media screen and (max-width: 400px) {
+.titulover{
+font-size:25px;
+}
+.emailver{
+    font-size: 13px;
+}
+.telefonover{
+    font-size: 25px;
+}
+.nombrever{
+    font-size: 25x;
+}
+.costover{
+    font-size: 25px;
+}
+.estadover{
+    font-size: 25px;
+}
+.descripcionver{
+    font-size: 25px;
+}
+.seriever{
+    font-size: 25px;
+}
+.modelover{
+    font-size: 25px;
+}
+.codigover{
+    font-size: 25px;
+}
+}
+
+@media screen and (max-width: 500px) {
+    .titulover{
+    font-size:25px;
+    }
+    .emailver{
+        font-size: 13px;
+    }
+    .telefonover{
+        font-size: 25px;
+    }
+    .nombrever{
+        font-size: 25px;
+    }
+    .costover{
+        font-size: 25px;
+    }
+    .estadover{
+        font-size: 25px;
+    }
+    .descripcionver{
+        font-size: 25px;
+    }
+    .seriever{
+        font-size: 25px;
+    }
+    .modelover{
+        font-size: 25px;
+    }
+    .codigover{
+        font-size: 25px;
+    }
+    }
+    @media screen and (max-width: 800px) {
+        .titulover{
+        font-size:25px;
+        }
+        .emailver{
+            font-size: 12px;
+        }
+        .telefonover{
+            font-size: 25px;
+        }
+        .nombrever{
+            font-size: 25px;
+        }
+        .costover{
+            font-size: 25px;
+        }
+        .estadover{
+            font-size: 25px;
+        }
+        .descripcionver{
+            font-size: 25px;
+        }
+        .seriever{
+            font-size: 25px;
+        }
+        .modelover{
+            font-size: 25px;
+        }
+        .codigover{
+            font-size: 25px;
+        }
+        }
+        @media screen and (max-width: 1050px) {
+            .titulover{
+            font-size:25px;
+            }
+            .emailver{
+                font-size: 15px;
+            }
+            .telefonover{
+                font-size: 25px;
+            }
+            .nombrever{
+                font-size: 25px;
+            }
+            .costover{
+                font-size: 25px;
+            }
+            .estadover{
+                font-size: 25px;
+            }
+            .descripcionver{
+                font-size: 25px;
+            }
+            .seriever{
+                font-size: 25px;
+            }
+            .modelover{
+                font-size: 25px;
+            }
+            .codigover{
+                font-size: 25px;
+            }
+            }
+            @media screen and (max-width: 1300px) {
+                .titulover{
+                font-size:25px;
+                }
+                .emailver{
+                    font-size: 20px;
+                }
+                .telefonover{
+                    font-size: 25px;
+                }
+                .nombrever{
+                    font-size: 25px;
+                }
+                .costover{
+                    font-size: 25px;
+                }
+                .estadover{
+                    font-size: 25px;
+                }
+                .descripcionver{
+                    font-size: 25px;
+                }
+                .seriever{
+                    font-size: 25px;
+                }
+                .modelover{
+                    font-size: 25px;
+                }
+                .codigover{
+                    font-size: 25px;
+                }
+                }
+                @media screen and (max-width: 2000px) {
+                    .titulover{
+                    font-size:25px;
+                    }
+                    .emailver{
+                        font-size: 20px;
+                    }
+                    .telefonover{
+                        font-size: 25px;
+                    }
+                    .nombrever{
+                        font-size: 25px;
+                    }
+                    .costover{
+                        font-size: 25px;
+                    }
+                    .estadover{
+                        font-size: 25px;
+                    }
+                    .descripcionver{
+                        font-size: 25px;
+                    }
+                    .seriever{
+                        font-size: 25px;
+                    }
+                    .modelover{
+                        font-size: 25px;
+                    }
+                    .codigover{
+                        font-size: 25px;
+                    }
+                    }

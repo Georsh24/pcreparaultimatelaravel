@@ -41,8 +41,14 @@ class EquiposController extends Controller
     {
 
         $validate = $request->validate([
-            'codigo' => 'unique:equipos,codigo,',
-            'serie' => 'unique:equipos,serie,'
+            'codigo' => 'numeric|max:5|min:2|unique:equipos,codigo,',
+            'modelo' => 'string|max:15|min:1',
+            'serie' => 'alpha_dash|max:10|min:5|unique:equipos,serie,',
+            'descripcion' => 'alpha_dash|max:50|min:5',
+            'costo' => 'numeric|max:10|min:1',
+            'nombre '=> 'string|max:40|min:10',
+            'telefono' => 'numeric|max:11|min:10',
+            'email' => 'email|max:30|min:10|unique:equipos,email,'
             
         ]);
         $equipo = [
