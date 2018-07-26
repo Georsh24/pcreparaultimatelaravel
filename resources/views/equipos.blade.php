@@ -9,16 +9,16 @@
 <h3>{{Session::get('success')}}</h3>
 @endif
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-sm-12">
         <div class="w3-responsive">
             <table class="w3-table-all w3-card-4 w3-small">
                 <thead>
                     <tr class="w3-red">
-                        <th>No.</th>
+                        
                         <th>Codigo</th>
                         <th>Modelo</th>
                         <th>Serie</th>
-                        <th>Descripcion</th>
+                       
                         <th>Estado</th>
                         <th>Costo</th>
                         
@@ -33,13 +33,13 @@
                     
                         @foreach ($equipos as $key => $equipo)
                         <tr class="info">
-                            <td>{{($key+1)}}</td>
-                            <td>{{ $equipo->codigo}}</td>
+                            
+                            <td>#{{ $equipo->codigo}}</td>
                             <td>{{ $equipo->model}}</td>
                             <td>{{ $equipo->serie}}</td>
-                            <td>{{ $equipo->descripcion}}</td>
+                           
                             <td>{{ $equipo->estado}}</td>
-                            <td>{{ $equipo->costo}}</td>
+                            <td>${{ $equipo->costo}}</td>
                                 <td>
                                <div class="w3-bar">
                                     <a  href="{{URL ('/equipo/ver/'. $equipo->id )}}" class="col-sm-3 w3-button  w3-orange w3-hover-grey ">ver</a>

@@ -24,7 +24,9 @@ Route::post('/search/event', 'EquiposController@search');
 
 
 Auth::routes();
-
+//Route::post('/equipos/create', ['middleware' => 'Auth', function () {
+    
+//}]);
 Route::get('/home', 'EquiposController@index')->name('equipos');
 
 Route::group(['prefix' => ''], function(){

@@ -1,7 +1,8 @@
 
-    
+
 @extends('layouts.app')
-@section('content')    
+@section('content') 
+  
 <body style="background-color: rgb(120, 120, 120)!important;">
 
 <div class="container-fluid">
@@ -117,7 +118,7 @@
                                             <label for="nombre" class=" control-label">Nombre:</label>
                     
                                             <div class="">
-                                                <input id="nombre" type="text" class="w3-input w3-animate-input"  style="width: 75%" name="nombre" placeholder="199" value="{{ old('nombre') }}">
+                                                <input id="nombre" type="text" class="w3-input w3-animate-input"  style="width: 75%" name="nombre" placeholder="Juanito" value="{{ old('nombre') }}">
                     
                                                 @if ($errors->has('nombre'))
                                                     <span class="help-block">
@@ -132,7 +133,7 @@
                                             <label for="telefono" class=" control-label">Telefono:</label>
                     
                                             <div class="">
-                                                <input id="telefono" type="text"  class="w3-input w3-animate-input" style="width: 75%" name="telefono"  value="{{ old('telefono') }}" >
+                                                <input id="telefono" type="text"  class="w3-input w3-animate-input" style="width: 75%" name="telefono" placeholder="6188281516" value="{{ old('telefono') }}" >
                     
                                                 @if ($errors->has('telefono'))
                                                     <span class="help-block">
@@ -148,7 +149,7 @@
                                             <label for="email" class=" control-label">E-mail:</label>
                     
                                             <div class="">
-                                                <input id="email" type="text" class="w3-input w3-animate-input" style="width: 75%" name="email"  value="{{ old('email') }}">
+                                                <input id="email" type="text" class="w3-input w3-animate-input" style="width: 75%" name="email" placeholder="ejemplo@ejemplo.com" value="{{ old('email') }}">
                     
                                                 @if ($errors->has('email'))
                                                     <span class="help-block">
@@ -159,8 +160,24 @@
                                            
                                             
                                         </div>
-    
-                 
+
+                                                        <div class="col-md-6 form-group{{ $errors->has('created_at') ? ' has-error' : '' }}">
+                                            <label for="created_at" class=" control-label">Inicio de reporte:</label>
+                    
+                                            <div class="">
+                                       
+                                                <input type="strings" name="created_at" id="created_at" class="w3-input w3-animate-input" style="width:75%" readonly="readonly" value="{{ date('Y-m-d h:i:s')}}">
+                                                @if ($errors->has('created_at'))
+                                                    <span class="help-block">
+                                                        <strong>{{ $errors->first('created_at') }}</strong>
+                                                    </span>
+                                                @endif
+                                            </div>
+                                           
+                                            
+                                        </div>
+                
+                                     
                           
                             <div class="form-group">
                                 <div class="col-md-6 ">
@@ -177,7 +194,8 @@
     </div>
 
 
-        
 
+
+     
 @endsection
-</body>
+

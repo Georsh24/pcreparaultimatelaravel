@@ -15,7 +15,7 @@ class EquiposController extends Controller
     {
         
 
-        $this->middleware('auth', ['only' => ['store',   'edit', 'update', 'destroy']]);
+        $this->middleware('auth', ['only' => ['store', 'equipos', 'home', 'ver', 'index', 'edit', 'update', 'destroy']]);
     }
 
     public function ver($id)
@@ -41,13 +41,13 @@ class EquiposController extends Controller
     {
 
         $validate = $request->validate([
-            'codigo' => 'numeric|max:5|min:2|unique:equipos,codigo,',
+            'codigo' => 'numeric|max:9999|min:10|unique:equipos,codigo,',
             'modelo' => 'string|max:15|min:1',
             'serie' => 'alpha_dash|max:10|min:5|unique:equipos,serie,',
-            'descripcion' => 'alpha_dash|max:50|min:5',
-            'costo' => 'numeric|max:10|min:1',
+            'descripcion' => 'string|max:200|min:20',
+            'costo' => 'numeric|max:2000|min:25',
             'nombre '=> 'string|max:40|min:10',
-            'telefono' => 'numeric|max:11|min:10',
+            'telefono' => 'string|max:11|min:10',
             'email' => 'email|max:30|min:10|unique:equipos,email,'
             
         ]);
@@ -61,7 +61,8 @@ class EquiposController extends Controller
             'costo' => $request->costo,
             'nombre' => $request->nombre,
             'telefono' => $request->telefono,
-            'email' => $request->email
+            'email' => $request->email,
+            'created_at'=> $request->created_at
         ];
         $save = Equipos::insert($equipo);
             if($save)
@@ -109,6 +110,15 @@ class EquiposController extends Controller
   
     public function update(Request $request, $id)
     {   
+
+
+        $validate = $request->validate([
+        
+            'descripcion' => 'string|max:250|min:5',
+            'costo' => 'numeric|max:20000|min:10'
+           
+        ]);
+
        if($request->has('codigo')){
            $codigo = $request->codigo;
        $equipo = [
@@ -121,7 +131,8 @@ class EquiposController extends Controller
             'costo' => $request->costo,
             'nombre' => $request->nombre,
             'telefono' => $request->telefono,
-            'email' => $request->email
+            'email' => $request->email,
+            'created_at' => $request->created_at,
         ];
     }else{
         $equipo =[
@@ -134,6 +145,7 @@ class EquiposController extends Controller
         'nombre' => $request->nombre,
         'telefono' => $request->telefono,
         'email' => $request->email,
+        'created_at' => $request->created_at,
         ];
     }
         
@@ -158,10 +170,10 @@ class EquiposController extends Controller
 
             $equipo->destroy($id);
 
-            $msg = ' Hapus Use Bersathil'; 
+            $msg = 'Equipo eliminado'; 
             }else{
 
-            $msg = ' Hapus USER GAGAL'; 
+            $msg = ' No se ha podido eliminar el equipo'; 
     }
     return redirect()
     ->back()

@@ -13,3 +13,11 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.js('public/js/jquery3.1.js', 'public/js')
+
+mix.js('public/js/input-mask-init.js', 'public/js')
+
+mix.js('public/js/jquery.mask.min.js', 'public/js')
+
+

@@ -67,7 +67,7 @@
             <a class="textencabezado" href="#section1">Inicio</a>
           </li>
           <li>
-            <a class="textencabezado" href="#section2">Promociones</a>
+            <a class="textencabezado" href="#section2">Rastreo</a>
           </li>
           <li>
             <a class="textencabezado" href="#section3">Nuestro Equipo</a>
@@ -81,9 +81,9 @@
           <li>
             <a class="textencabezado" href="/login">Administracion</a>
           </li>
-          <li>
+          <!---<li>
             <a class="textencabezado" href="/register">Registro</a>
-          </li>
+          </li>-->
 
         </ul>
       </div>
@@ -105,26 +105,26 @@
       <div class="carousel-inner">
 
         <div class="item active imginicio">
-          <img src="2.jpg" alt="Los Angeles" style="width:100%; height: 400px;">
+          <img src="imgs/recargatoner.jpg" alt="Los Angeles" style="width:100%; height: 400px;">
           <div class="carousel-caption">
-            <h3>Los Angeles</h3>
-            <p>LA is always so much fun!</p>
+            <h3>Toner</h3>
+            <p>Recarga y venta!s</p>
           </div>
         </div>
 
         <div class="item imginicio">
-          <img src="3.jpg" alt="Chicago" style="width:100%; height: 400px;">
+          <img src="imgs/serviciolanix.jpg" alt="Chicago" style="width:100%; height: 400px;">
           <div class="carousel-caption">
-            <h3>Chicago</h3>
-            <p>Thank you, Chicago!</p>
+            <h3>Lanix</h3>
+            <p>Servicio y Garantia</p>
           </div>
         </div>
 
         <div class="item imginicio">
-          <img src="2.jpg" alt="New York" style="width:100%; height: 400px;">
+          <img src="imgs/promo.png" alt="New York" style="width:100%; height: 400px;">
           <div class="carousel-caption">
-            <h3>New York</h3>
-            <p>We love the Big Apple!</p>
+            <h3>Reinstalacion</h3>
+            <p>De sistema operativo!</p>
           </div>
         </div>
 
@@ -149,7 +149,7 @@
         <li class="textli">Calidad</li>
         <li class="textli">Precio</li>
       </ul>
-      <p class="textp">pntes </p>
+      <p class="textp">para nuestros clientes </p>
     </div>
   </div>
 
@@ -161,7 +161,7 @@
 
 <div id="section2" class="container-fluid">
   <div class="container">
-    <h1>Promociones</h1>
+    <h1>Rastreo</h1>
     <div class="container"> 
       <div class="row">
         <div class="col-md-4">
@@ -197,14 +197,15 @@
                   
                   <div class="row">
                       <div class="col-md-12">
-                          <div class="table-resposive">
-                              <table class="table table-hover ">
+                          <div class="w3-resposive">
+                              <table class="w3-table-all w3-card-4  w3-tiny ">
                                   <thead>
                                       <tr>
                                         
+                                        
                                           <th>Codigo:</th>
-                                          <th>Modelo:</th>
-                                          <th>Serie:</th>
+                                         <!-- <th>Modelo:</th>
+                                          <th>Serie:</th>-->
                                           <th>Descripcion:</th>
                                           <th>Estado:</th>
                                           <th>Costo Aproximado:</th>
@@ -222,6 +223,21 @@
               </div>
             </div>
           </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="glyphicon glyphicon-bullhorn"></span>
+              Ayuda
+            </div>
+            <div class="panel-body">
+              <p>¿No encuentras tu equipo? haz clic <a href="https://api.whatsapp.com/send?phone=526181081364&text=Hola%2C%20no%20encuentro%20mi%20equipo">aqui</a></p>
+              <p></p>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -359,7 +375,7 @@
         </label>
       </div>
     </a>
-    <a href="">
+    <a href="https://api.whatsapp.com/send?phone=526181081364&text=Hola%2C%20Quisiera%20mas%20informacion">
       <div class="row-icon icon4">
         <h4>Whatsapp</h4>
         <label class=" ">
@@ -367,7 +383,7 @@
         </label>
       </div>
     </a>
-    <a href="">
+    <a href="https://www.facebook.com/PCrepara.Dgo/">
       <div class="row-icon icon5">
         <h4>Facebook</h4>
         <label class=" ">

@@ -11,6 +11,7 @@ class PdfController extends Controller
         $equipo= new equipos;
         $equipos = $equipo-> where('codigo',$id)->get();
         $pdf = PDF::loadView('pdf', compact('equipos'));
+        //return view ('pdf',["equipos"=>$equipos]);
         return $pdf-> download('myPDF.pdf');
     }
 }

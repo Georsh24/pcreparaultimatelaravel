@@ -55,9 +55,9 @@
           <li>
             <a class="textencabezado" href="/login">Administracion</a>
           </li>
-          <li>
+          <!--<li>
             <a class="textencabezado" href="/register">Registro</a>
-          </li>
+          </li>-->
 
         </ul>
       </div>
@@ -67,7 +67,7 @@
 
 <div id="" class="container-fluid" >
   <div class="container">
-    <h4 class="text-center">Encuentra tu equipo</h4>
+    <h4 class="text-center">Tu equipo!!</h4>
     <div class="container"> 
       <div class="row">
         <div class="col-md-4">
@@ -100,16 +100,16 @@
               </div>
               <div class="panel-body">
                   <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-sm-12">
                           <div class="table-resposive">
-                              <table class="table table-hover table-bordered">
+                              <table class="w3-table-all w3-card-4 w3-small">
                                   <thead>
                                       <tr>
-                                          <th>No.</th>
+                                          
                                           <th>Codigo</th>
                                           <th>Modelo</th>
-                                          <th>Serie</th>
-                                          <th>Descripcion</th>
+                                        <!--  <th>Serie</th>
+                                          <th>Descripcion</th>-->
                                           <th>Estado</th>
                                           <th>Costo</th>
                                   
@@ -119,13 +119,13 @@
                                 
                                       @foreach ($equipos as $key => $equipo)
                                       <tr class="info">
-                                          <td>{{($key+1)}}</td>
-                                          <td>{{ $equipo->codigo}}</td>
-                                          <td>{{ $equipo->model}}</td>
-                                          <td>{{ $equipo->serie}}</td>
+                                          
+                                          <td>#{{ $equipo->codigo}}</td>
+                                          <!--<td>{{ $equipo->model}}</td>
+                                          <td>{{ $equipo->serie}}</td>-->
                                           <td>{{ $equipo->descripcion}}</td>
                                           <td>{{ $equipo->estado}}</td>
-                                          <td>{{ $equipo->costo}}</td>
+                                          <td>${{ $equipo->costo}}</td>
                                         
                                      
                                       </tr>
@@ -143,8 +143,23 @@
               </div>
             </div>
           </div>
+      </div> <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="glyphicon glyphicon-bullhorn"></span>
+              Ayuda
+            </div>
+            <div class="panel-body">
+              <p>¿No encuentras tu equipo? haz clic <a href="https://api.whatsapp.com/send?phone=526181081364&text=Hola%2C%20no%20encuentro%20mi%20equipo">aqui</a></p>
+              <p></p>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
+   
   </div>
 </div>
 

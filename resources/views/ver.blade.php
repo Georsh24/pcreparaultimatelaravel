@@ -17,7 +17,7 @@
 
                     <div style="background-color: white" class="w3-container w3-row ">
                         <h3 class="w3-col s6 tcodigover">Codigo:</h3>
-                        <h3 class="w3-col s6 codigover">{{ $equipo->codigo}}</h3> 
+                        <h3 class="w3-col s6 codigover">#{{ $equipo->codigo}}</h3> 
                         <h3 class="w3-col s6 tmodelover">Modelo:</h3>
                         <h3 class="w3-col s6 modelover">{{ $equipo->model}}</h3>
                         <h3 class="w3-col s6 tseriever">Serie:</h3>
@@ -27,7 +27,7 @@
                         <h3 class="w3-col s6 testadover">Estado:</h3>
                         <h3 class="w3-col s6 estadover">{{ $equipo->estado}}</h3>
                         <h3 class="w3-col s6 tcostover">Costo:</h3>
-                        <h3 class="w3-col s6 costover">{{ $equipo->costo}}</h3>
+                        <h3 class="w3-col s6 costover">${{ $equipo->costo}}</h3>
                         <h3 class="w3-col s6 tnombrever">Nombre:</h3>
                         <h3 class="w3-col s6 nombrever">{{ $equipo->nombre}}</h3>
                         <h3 class="w3-col s6 ttelefonover">Telefono:</h3>

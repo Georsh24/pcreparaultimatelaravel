@@ -148,7 +148,21 @@
                                                
                                                 
                                             </div>
-        
+                                            <div class="col-md-6 form-group{{ $errors->has('created_at') ? ' has-error' : '' }}">
+                                           
+                    
+                                            <div class="">
+                                       
+                                                <input type="strings" name="created_at" id="created_at" class="w3-input w3-animate-input" style="width:75%; display:none;" readonly="readonly" value="{{$equipo->created_at}}">
+                                                @if ($errors->has('created_at'))
+                                                    <span class="help-block">
+                                                        <strong>{{ $errors->first('created_at') }}</strong>
+                                                    </span>
+                                                @endif
+                                            </div>
+                                           
+                                            
+                                        </div>
 
                  
                           

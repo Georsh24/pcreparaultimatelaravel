@@ -11,11 +11,20 @@
     <title>{{ config('', 'PC REPARA') }}</title>
 
     <!-- Styles -->
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estiloslogin.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('css/estiloslogin.css')}}">
+   
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+<script>
+$(document).ready(function() {
+   alert("jQuery esta funcionando !!");
+ });
+ </script>
 </head>
 <body>
     <div id="app">
@@ -81,7 +90,19 @@
     <!-- Scripts -->
 
     <script src="{{ asset('js/app.js') }}"></script>
-   
-    
+    <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+
+<script src="{{ asset('js/dist/inputmask/inputmask.js') }}"></script>
+<script src="{{ asset('js/dist/inputmask/inputmask.extensions.js') }}"></script>
+<script src="{{ asset('js/dist/inputmask/inputmask.numeric.extensions.js') }}"></script>
+<script src="{{ asset('js/dist/inputmask/inputmask.date.extensions.js') }}"></script>
+<script src="{{ asset('js/dist/inputmask/inputmask.phone.extensions.js') }}"></script>
+<script src="{{ asset('js/dist/inputmask/jquery.inputmask.js') }}"></script>
+<script src="{{ asset('js/dist/inputmask/phone-codes/phone.js') }}"></script>
+<script src="{{ asset('js/dist/inputmask/phone-codes/phone-be.js') }}"></script>
+<script src="{{ asset('js/dist/inputmask/phone-codes/phone-ru.js') }}"></script>
+<script src="{{ asset('js/masktest.js') }}"></script>
+       
+  
 </body>
 </html>
